@@ -12,7 +12,7 @@ function convertPokemonToHtml(pokemon){
       <ol class="types">
         ${convertPokemonTypesToHtml(pokemon.types).join('')}
       </ol>
-      <img src="${pokemon.versions.generation-vi.x-y.front_default}" alt="${pokemon.name}">
+      <img src="${pokemon.sprites.other.home.front_default}" alt="${pokemon.name}">
 
     </div>
   </li>
@@ -22,7 +22,7 @@ function convertPokemonToHtml(pokemon){
 const pokemonList = document.getElementById('pokemonList')
 
 pokeApi.getPokemons().then((pokemons = []) => {
-  pokemonList.innerHTML = pokemons.map(convertPokemonToHtml).join('')
+  const newHtml = pokemons.map(convertPokemonToHtml).join('')
   pokemonList.innerHTML = newHtml
     
   })
