@@ -160,6 +160,11 @@
   align-self: flex-end;
 }
 
+section h1 span {
+  font-weight: 300;
+  font-size: small;
+}
+
 @media screen and (min-width: 380px) {
   .pokemons {
     grid-template-columns: 1fr 1fr;
