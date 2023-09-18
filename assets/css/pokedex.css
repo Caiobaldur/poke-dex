@@ -102,8 +102,6 @@
 .pagination button:hover {
   cursor: pointer;
   background-color: #5964bd;
-  
-  transition: 1s;
 }
 
 
@@ -116,7 +114,7 @@
   background-image: url(/assets/ball.png);
   background-repeat: no-repeat;
   background-size: 470px;
-  
+  transition: 0.5s;
 }
 
 .pokemon .number {
